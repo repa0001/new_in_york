@@ -1,15 +1,134 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
+import billede_1 from "../assets/images/billede_1.png";
+import billede_2 from "../assets/images/billede_2.png";
+import billede_3 from "../assets/images/billede_3.png";
+import billede_4 from "../assets/images/billede_4.png";
+import billede_7 from "../assets/images/billede_7.svg";
+import billede_16 from "../assets/images/billede_16.svg";
+import billede_17 from "../assets/images/billede_17.svg";
+import billede_18 from "../assets/images/billede_18.png";
+import billede_20 from "../assets/images/billede_20.png";
+import billede_21 from "../assets/images/billede_21.svg";
+
+
 ---
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
+	<article class="bg-yellow-one">
+
+						<section class="grid md:grid-cols-2 lg:mt-36 ">
+
+									<div class="grid-cols-1 ml-[10rem]">
+											<div>
+												<h1 class="text-5xl text-">New in York</h1>
+												<p class="text-xl mt-2">Rebecca Paaschburg</p>
+											</div>
+										
+											<div class="mt-[11rem] leading-relaxed">
+											
+
+												 	<a href="/#konceptet" class="block  border-r border- transition-all	 hover:line-through  hover:text-red-one">Konceptet</a>
+												<br>
+									
+
+												 <a href="/#inspiration" class="block  border-r border- transition-all	 hover:line-through  hover:text-red-one">Inspiration til fonten</a>
+												<br>
+
+												<a href="/#udtryk" class="block  border-r border- transition-all	 hover:line-through  hover:text-red-one">Udtryk og anvendelse</a>
+											
+											</div>
+									</div>
+									<div class="ml-[1rem] ">					
+											<Image class="w-[40rem]" src={billede_16} alt="Forsideimg"/>
+											<div class="text-right mr-36">
+												<h3 class="">Role</h3>
+												<p>Type Design  <span> //  </span>       Graphic Design  //   Promotion</p>
+											</div>
+									</div>
+
+						</section>
+	
+
+
+
+		<section class="ml-[10rem] mt-[6rem]">
+		<Image class=" lg:w-[140rem]" src={billede_17} alt="kk"/>
+		</section>
+
+	
+
+
+					<section id="konceptet" class="grid md:grid-cols-2 lg:mt-32 -mt-[12rem] ">
+						
+
+									<div class="grid-cols-1 ">
+											<Image class="w-[40rem] ml-24" src={billede_18} alt="Forsideimg"/>
+									</div>
+									<div class=" ml-20 max-w-[30rem] ">					
+					                        <h2 class="mb-4 mt-16">Konceptet</h2>
+											<p class="leading-relaxed">New in York er en display-skrifttype inspireret af håndskriftens udtryksfulde kraft og elegance. Den fanger den naturlige, flydende stil fra håndskrevne ord og kombinerer det med en kraftfuld, markant form, der gør den ideel til iøjnefaldende visuelle elementer.
+
+                                               Fonten er skabt i hånden og designet til at skille sig ud i overskrifter, logodesign, brandidentitet, websites, emballage og plakater, bringer New in York et unikt præg til enhver kontekst. Den indeholder både store og små bogstaver i det latinske alfabet, perfekt til moderne design.</p>
+									</div>
+
+						</section>
+
+		 
+
+						<section id="inspiration" class="grid md:grid-cols-2 lg:mt-32 ">
+
+									<div class="grid-cols-1 ">
+											<Image class="w-[50rem] ml-[9rem]" src={billede_2} alt="Forsideimg"/>
+									</div>
+									<div class=" grid-cols-1 ml-[12rem] max-w-[24rem] ">	
+										
+										<div>
+  												<h2 class="mb-4 mt-16">Inspiration til fonten</h2>
+											<p class="leading-relaxed">
+												Fonten er inspireret af skriften i håndskrevne breve, klassiske bøger og citater, som bringer ord til live på en personlig og levende måde. Den er designet med et simpelt, kursivt udtryk, der udstråler elegance og autenticitet
+											</p>
+										</div>
+
+										<div>
+											<Image class="w-[50rem] mt-[17rem]" src={billede_20} alt="Forsideimg"/>
+										</div>
+					                      
+									</div>
+
+						</section>
+
+
+			<section class=" -rotate-12">
+		<Image class=" ml-[9rem] lg:w-[35rem] -mt-[3rem]" src={billede_21} alt="kk"/>
+		</section>
+	
+
+			<section id="udtryk" class="grid md:grid-cols-2 lg:mt-32 ">
+
+										<div class="mt-[6rem] max-w-[24rem] ml-[15rem]">
+  												<h2 class="mb-4 mt-16">Skriftens udtryk og anvendelsesmuligheder</h2>
+											<p class="leading-relaxed">
+												Det håndskrevne udtryk gør skriften personlig, levende og autentisk. Den giver mulighed for både et råt og kraftfuldt udtryk samt en elegant, traditionel følelse. Fontens alsidige design kan skabe en klassisk, tidløs atmosfære eller et moderne, personligt præg, alt efter hvordan den anvendes. Dette gør den ideel til branding, logodesign, overskrifter, emballage og plakater, hvor den tilfører et stærkt, men også fleksibelt visuelt udtryk.
+											</p>
+										</div>
+
+										<div class="mr-[8rem] -mt-[16rem]">
+											<Image class="w-[60rem] " src={billede_4} alt="Forsideimg"/>
+										</div>
+					                      
+								
+
+						</section>
+
+		<section class=" ">
+				<Image class=" ml-[15rem] lg:w-[65rem] -mt-[2rem]" src={billede_3} alt="kk"/>
+		</section>
+
+		<section class=" ">
+				<Image class=" ml-[15rem] lg:w-[65rem] mt-[1rem]" src={billede_1} alt="kk"/>
+		</section>
+	
 	</article>
 </MainLayout>

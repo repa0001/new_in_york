@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
+  h1 {
+    font-family: "Inter Tight", system-ui;
+    font-weight: 400;
+  }
 
+  h2 {
+    font-family: "Inter Tight", system-ui;
+    font-weight: 300;
+    font-size: x-large;
+  }
+
+  p {
+    font-family: "Inter Tight", system-ui;
+    font-weight: 300;
+  }
+
+  a {
+    font-family: "Inter Tight", system-ui;
+    font-weight: 300;
+  }
 }
