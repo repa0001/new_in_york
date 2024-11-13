@@ -20,13 +20,13 @@ import billede_21 from "../assets/images/billede_21.svg";
 
 						<section class="grid md:grid-cols-2 lg:mt-36 ">
 
-									<div class="grid-cols-1 ml-[10rem]">
-											<div>
+									<div class="grid-cols-1 ml-[10rem] section9">
+											<div class="section9">
 												<h1 class="text-5xl text-">New in York</h1>
-												<p class="text-xl mt-2">Rebecca Paaschburg</p>
+												<p class="text-xl mt-2">By Rebecca Paaschburg // 2024</p>
 											</div>
 										
-											<div class="mt-[11rem] leading-relaxed">
+											<div class="mt-[11rem] leading-relaxed section10">
 											
 
 												 	<a href="/#konceptet" class="block  border-r border- transition-all	 hover:line-through  hover:text-red-one">Konceptet</a>
@@ -40,10 +40,10 @@ import billede_21 from "../assets/images/billede_21.svg";
 											
 											</div>
 									</div>
-									<div class="ml-[1rem] ">					
-											<Image class="w-[40rem]" src={billede_16} alt="Forsideimg"/>
+									<div class="mr-[5rem] section1">					
+											<Image class="w-[50rem]" src={billede_16} alt="Forsideimg"/>
 											<div class="text-right mr-36">
-												<h3 class="">Role</h3>
+												<h3 class=" mt-10 ml-10">Role</h3>
 												<p>Type Design  <span> //  </span>       Graphic Design  //   Promotion</p>
 											</div>
 									</div>
@@ -54,7 +54,7 @@ import billede_21 from "../assets/images/billede_21.svg";
 
 
 		<section class="ml-[10rem] mt-[6rem]">
-		<Image class=" lg:w-[140rem]" src={billede_17} alt="kk"/>
+		<Image class=" lg:w-[140rem] section2" src={billede_17} alt="kk"/>
 		</section>
 
 	
@@ -64,9 +64,9 @@ import billede_21 from "../assets/images/billede_21.svg";
 						
 
 									<div class="grid-cols-1 ">
-											<Image class="w-[40rem] ml-24" src={billede_18} alt="Forsideimg"/>
+											<Image class="w-[40rem] ml-24 section3" src={billede_18} alt="Forsideimg"/>
 									</div>
-									<div class=" ml-20 max-w-[30rem] ">					
+									<div class="section11 ml-20 max-w-[30rem] ">					
 					                        <h2 class="mb-4 mt-16">Konceptet</h2>
 											<p class="leading-relaxed">New in York er en display-skrifttype inspireret af håndskriftens udtryksfulde kraft og elegance. Den fanger den naturlige, flydende stil fra håndskrevne ord og kombinerer det med en kraftfuld, markant form, der gør den ideel til iøjnefaldende visuelle elementer.
 
@@ -80,19 +80,19 @@ import billede_21 from "../assets/images/billede_21.svg";
 						<section id="inspiration" class="grid md:grid-cols-2 lg:mt-32 ">
 
 									<div class="grid-cols-1 ">
-											<Image class="w-[50rem] ml-[9rem]" src={billede_2} alt="Forsideimg"/>
+											<Image class=" section4 w-[50rem] ml-[9rem]" src={billede_2} alt="Forsideimg"/>
 									</div>
 									<div class=" grid-cols-1 ml-[12rem] max-w-[24rem] ">	
 										
-										<div>
-  												<h2 class="mb-4 mt-16">Inspiration til fonten</h2>
+										<div class="section12">
+  												<h2 class="mb-4 mt-16 ">Inspiration til fonten</h2>
 											<p class="leading-relaxed">
 												Fonten er inspireret af skriften i håndskrevne breve, klassiske bøger og citater, som bringer ord til live på en personlig og levende måde. Den er designet med et simpelt, kursivt udtryk, der udstråler elegance og autenticitet
 											</p>
 										</div>
 
 										<div>
-											<Image class="w-[50rem] mt-[17rem]" src={billede_20} alt="Forsideimg"/>
+											<Image class="section5 w-[50rem] mt-[17rem]" src={billede_20} alt="Forsideimg"/>
 										</div>
 					                      
 									</div>
@@ -101,7 +101,7 @@ import billede_21 from "../assets/images/billede_21.svg";
 
 
 			<section class=" -rotate-12">
-		<Image class=" ml-[9rem] lg:w-[35rem] -mt-[3rem]" src={billede_21} alt="kk"/>
+		<Image class=" section6 ml-[9rem] lg:w-[35rem] -mt-[3rem]" src={billede_21} alt="kk"/>
 		</section>
 	
 
@@ -115,7 +115,7 @@ import billede_21 from "../assets/images/billede_21.svg";
 										</div>
 
 										<div class="mr-[8rem] -mt-[16rem]">
-											<Image class="w-[60rem] " src={billede_4} alt="Forsideimg"/>
+											<Image class="w-[60rem] section7" src={billede_4} alt="Forsideimg"/>
 										</div>
 					                      
 								
@@ -123,12 +123,97 @@ import billede_21 from "../assets/images/billede_21.svg";
 						</section>
 
 		<section class=" ">
-				<Image class=" ml-[15rem] lg:w-[65rem] -mt-[2rem]" src={billede_3} alt="kk"/>
+				<Image class=" ml-[15rem] lg:w-[65rem] -mt-[2rem] section8" src={billede_3} alt="kk"/>
 		</section>
 
 		<section class=" ">
-				<Image class=" ml-[15rem] lg:w-[65rem] mt-[1rem]" src={billede_1} alt="kk"/>
+				<Image class=" ml-[15rem] lg:w-[65rem] mt-[1rem] section13" src={billede_1} alt="kk"/>
 		</section>
 	
 	</article>
 </MainLayout>
+
+<script>
+	import { inView } from "motion";
+
+	const inviewelement = document.querySelector(".section1");
+	inView(
+		inviewelement , () => {
+			inviewelement.classList.add("animate__animated","animate__fadeIn", "animate__delay-2s")
+		})
+
+		const inviewelement1 = document.querySelector(".section2");
+	inView(
+		inviewelement1 , () => {
+			inviewelement1.classList.add("animate__animated","animate__fadeIn", "animate__delay-3s")
+		})
+		
+		const inviewelement2 = document.querySelector(".section3");
+	inView(
+		inviewelement2 , () => {
+			inviewelement2.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+		const inviewelement3 = document.querySelector(".section4");
+	inView(
+		inviewelement3 , () => {
+			inviewelement3.classList.add("animate__animated","animate__fadeIn", "animate__delay-2s")
+		})
+
+		const inviewelement4 = document.querySelector(".section5");
+	inView(
+		inviewelement4 , () => {
+			inviewelement4.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+		const inviewelement5 = document.querySelector(".section6");
+	inView(
+		inviewelement5 , () => {
+			inviewelement5.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+		
+		const inviewelement6 = document.querySelector(".section7");
+	inView(
+		inviewelement6 , () => {
+			inviewelement6.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+		const inviewelement7 = document.querySelector(".section8");
+	inView(
+		inviewelement7 , () => {
+			inviewelement7.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+
+         const inviewelement8 = document.querySelector(".section9");
+			inView(
+		inviewelement8 , () => {
+			inviewelement8.classList.add("animate__animated","animate__fadeIn", "animate__delay-2s")
+		})
+
+		
+         const inviewelement9 = document.querySelector(".section10");
+			inView(
+		inviewelement9 , () => {
+			inviewelement9.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+		     const inviewelement10 = document.querySelector(".section11");
+			inView(
+		inviewelement10 , () => {
+			inviewelement10.classList.add("animate__animated","animate__fadeIn", "animate__delay-2s")
+		})
+
+		     const inviewelement11 = document.querySelector(".section12");
+			inView(
+		inviewelement11 , () => {
+			inviewelement11.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+		     const inviewelement12 = document.querySelector(".section13");
+			inView(
+		inviewelement11 , () => {
+			inviewelement11.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+</script>
